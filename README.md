@@ -28,7 +28,7 @@ must have the same sequence to be grouped.
 content. r means route message, h denotes hello message c data message
 
 
-![prototype](https://github.com/luciorp/esp32_mesh/blob/main/img/sensor.png)
+![prototype](https://github.com/luciorp/esp32_mesh/blob/main/img/packet.png)
 
 
 The original Babel routing protocol includes the next-hop information as a packet
