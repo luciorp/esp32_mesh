@@ -32,7 +32,7 @@
 #define TAG "LORA32"
 #define HEADER_LENGTH 16
 #define SHA1_LENGTH 40
-#define ADDR_LENGTH 6 
+#define ADDR_LENGTH 4 
 #define MAX_ROUTES_PER_PACKET 24
 #define MAX_PACKET_BUFFER 10
 //#define DEBUG 1
@@ -104,6 +104,7 @@ struct Packet {
     uint8_t totalLength;
     uint8_t source[ADDR_LENGTH];
     uint8_t destination[ADDR_LENGTH];
+    uint8_t nextHop[ADDR_LENGTH];
     uint8_t sequence;
     uint8_t type;
     uint8_t data[240];
@@ -653,12 +654,9 @@ int packet_received(char* data, size_t len) {
             //printRoutingTable();
             break;
         case 'c' :
-            // chat packet
+            // message packet
             //parseChatPacket(packet);
             //Serial.printf("this is a chat message\n");
-            break;
-        case 'm' :
-            //Serial.printf("this is a map message\n");
             break;
         default :
             //printPacketInfo(packet, metadata);
