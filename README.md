@@ -1,4 +1,4 @@
-# Esp32 Mesh
+# Esp32 LoRA Mesh
 
 We designed a protocol to deploy our prototype by considering the lim-
 itations of a LoRa radio to exchange control and data information. In this
