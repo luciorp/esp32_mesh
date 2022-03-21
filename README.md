@@ -25,7 +25,11 @@ fragments received by the two radio interfaces, where both fragments
 must have the same sequence to be grouped.
 
 *Type [1 byte]: is an ASCII character, which describes the payload
-content. r means route message, h denotes hello message
+content. r means route message, h denotes hello message c data message
+
+
+![prototype](https://github.com/luciorp/esp32_mesh/blob/main/img/sensor.png)
+
 
 The original Babel routing protocol includes the next-hop information as a packet
 payload, introducing additional processing at the relay node to get such vital
@@ -69,8 +73,13 @@ probably never complete, as new nodes may appear at any time. After a
 determined time configured as a parameter on each node in the network, the
 node enters the Forwarding phase
 
+
+
 # Compile
 
 Install ESP IDF-SDK
 
 https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/windows-setup.html
+
+# Prototype
+![prototype](https://github.com/luciorp/esp32_mesh/blob/main/img/sensor.png)
