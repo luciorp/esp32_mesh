@@ -68,3 +68,9 @@ priority, wherein each entry has a size of 8-byte. The Learning phase is
 probably never complete, as new nodes may appear at any time. After a
 determined time configured as a parameter on each node in the network, the
 node enters the Forwarding phase
+
+# Compile
+
+Install ESP IDF-SDK
+
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/windows-setup.html
