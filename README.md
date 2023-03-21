@@ -37,7 +37,7 @@ information. In this case, we consider the next-hop address within the packet
 header. Each node has a unique 4-byte identifier based on the least significant
 bytes of the MAC address of the hardware, which is used to guarantee this
 individual address. We used this identifier to keep the compatibility with
-the MAC address. We define the broadcast address as 0xFFFFFFFF. It is
+the MAC address.  We define the broadcast address as 0xFFFFFFFF. It is
 fundamental to highlight that we can have a larger node address size at the
 cost of reducing the payload size.
 
